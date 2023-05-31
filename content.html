@@ -1,0 +1,754 @@
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+
+<script>
+    window.lln_i18n = {
+        appName: `__MSG_appName__`,
+        noDictionary_error: `__MSG_noDictionary_error__`,
+        subtitlesNotLoaded_error: `__MSG_subtitlesNotLoaded_error__`,
+        subtitlesNoMatchAudio_error: `__MSG_subtitlesNoMatchAudio_error__`,
+        audioNoMatchSubtitles_error: `__MSG_audioNoMatchSubtitles_error__`,
+        pleaseSelectSubtitles: `__MSG_pleaseSelectSubtitles__`,
+        loadingSubtitles: `__MSG_loadingSubtitles__`,
+        loadingTranslations: `__MSG_loadingTranslations__`,
+        firstSubtitleNotReached: `__MSG_firstSubtitleNotReached__`,
+        errorApology: `__MSG_errorApology__`,
+        originalLanguage_tooltip: `__MSG_originalLanguage_tooltip__`,
+        subtitleLanguage_tooltip: `__MSG_subtitleLanguage_tooltip__`,
+        audioLanguage_tooltip: `__MSG_audioLanguage_tooltip__`,
+        vocabHighlight_tooltip: `__MSG_vocabHighlight_tooltip__`,
+        // js templates - bottom panel
+        // keyboardShortcuts: `__MSG_keyboardShortcuts__`,
+        // previous: `__MSG_previous__`,
+        // repeat: `__MSG_repeat__`,
+        // next: `__MSG_next__`,
+        // playPause: `__MSG_playPause__`,
+        // alsoUseASD: `__MSG_alsoUseASD__`,
+        autoPause: `__MSG_autoPause__`,
+        autoPause_tooltip: `__MSG_autoPause_tooltip__`,
+        
+        showHumanTranslation_tooltip: `__MSG_showHumanTranslation_tooltip__`,
+        showMachineTranslation_tooltip: `__MSG_showMachineTranslation_tooltip__`,
+
+        // V3.0 UI Strings
+        welcomeModal_line1_string: `__MSG_welcomeModal_line1_string__`,
+        welcomeModal_line2_string: `__MSG_welcomeModal_line2_string__`,
+        welcomeModal_line3_string: `__MSG_welcomeModal_line3_string__`,
+        welcomeModal_line4_string: `__MSG_welcomeModal_line4_string__`,
+        welcomeModal_line5_string: `__MSG_welcomeModal_line5_string__`,
+        proFeatures_line1_string: `__MSG_proFeatures_line1_string__`,
+        proFeatures_line2_string: `__MSG_proFeatures_line2_string__`,
+        proFeatures_tt2_string: `__MSG_proFeatures_tt2_string__`,
+        proFeatures_line3_string: `__MSG_proFeatures_line3_string__`,
+        proFeatures_tt3_string: `__MSG_proFeatures_tt3_string__`,
+        proFeatures_line4_string: `__MSG_proFeatures_line4_string__`,
+        proFeatures_tt4_string: `__MSG_proFeatures_tt4_string__`,
+        proFeatures_line5_string: `__MSG_proFeatures_line5_string__`,
+        proFeatures_tt5_string: `__MSG_proFeatures_tt5_string__`,
+        price_string: `__MSG_price_string__`,
+        welcomeModal_line6_string: `__MSG_welcomeModal_line6_string__`,
+        freeTrial3_line_string: `__MSG_freeTrial3_line_string__`,
+        freeTrial7_line_string: `__MSG_freeTrial7_line_string__`,
+        notNow_btn_string: `__MSG_notNow_btn_string__`,
+        continueWithGoogle_btn_string: `__MSG_continueWithGoogle_btn_string__`,
+        trialBegunModal_body_string: `__MSG_trialBegunModal_body_string__`,
+        ok_btn_string: `__MSG_ok_btn_string__`,
+        prePaymentModal_line1_string: `__MSG_prePaymentModal_line1_string__`,
+        choosePaymentProvider_line_string: `__MSG_choosePaymentProvider_line_string__`,
+        payWithGoogle_btn_string: `__MSG_payWithGoogle_btn_string__`,
+        payWithPaddle_btn_string: `__MSG_payWithPaddle_btn_string__`,
+        paymentSuccessful_line1_string: `__MSG_paymentSuccessful_line1_string__`,
+        paymentSuccessful_line2_string: `__MSG_paymentSuccessful_line2_string__`,
+        paymentSuccessfulPaddleMessage_line_string: `__MSG_paymentSuccessfulPaddleMessage_line_string__`,
+        cancelGoogle_line_string: `__MSG_cancelGoogle_line_string__`,
+        cancelSubscription_btn_string: `__MSG_cancelSubscription_btn_string__`,
+        problemWithPayment_line1_string: `__MSG_problemWithPayment_line1_string__`,
+        problemWithPayment_line2_string: `__MSG_problemWithPayment_line2_string__`,
+        updatePayment_btn_string: `__MSG_updatePayment_btn_string__`,
+        alreadyUserPleaseSignIn: `__MSG_alreadyUserPleaseSignIn__`,
+        pleaseSignIn: `__MSG_pleaseSignIn__`,
+        signIn: `__MSG_signIn__`,
+        signOut: `__MSG_signOut__`,
+        options: `__MSG_options__`,
+        mode: `__MSG_mode__`,
+        manageSubscription: `__MSG_manageSubscription__`,
+        mode_free: `__MSG_mode_free__`,
+        mode_pro: `__MSG_mode_pro__`,
+        mode_trial: `__MSG_mode_trial__`,
+        signInStatus: `__MSG_signInStatus__`,
+        signedIn: `__MSG_signedIn__`,
+        notSignedIn: `__MSG_notSignedIn__`,
+        fix: `__MSG_fix__`,
+        featureComingSoon: `__MSG_featureComingSoon__`,
+        showTransliterations: `__MSG_showTransliterations__`,
+        noTransliterations: `__MSG_noTransliterations__`,
+        romaji: `__MSG_romaji__`,
+        hiragana: `__MSG_hiragana__`,
+        playbackSpeed: `__MSG_playbackSpeed__`,
+        normal: `__MSG_normal__`,
+        notAvailable: `__MSG_notAvailable__`,
+        noHTAvailable: `__MSG_noHTAvailable__`,
+        noMTAvailable: `__MSG_noMTAvailable__`,
+        proFeature: `__MSG_proFeature__`,
+        saveCurrentSubtitle: `__MSG_saveCurrentSubtitle__`,
+        toggleAutoPause: `__MSG_toggleAutoPause__`,
+        exportToAnki: `__MSG_exportToAnki__`,
+        pleaseSelectItemsToExport: `__MSG_pleaseSelectItemsToExport__`,
+        allItems: `__MSG_allItems__`,
+        download: `__MSG_download__`,
+        subtitles: `__MSG_subtitles__`,
+        savedItems: `__MSG_savedItems__`,
+        allLanguages: `__MSG_allLanguages__`,
+        allTypes: `__MSG_allTypes__`,
+        yellowWords: `__MSG_yellowWords__`,
+        blueWords: `__MSG_blueWords__`,
+        greenWords: `__MSG_greenWords__`,
+        purpleWords: `__MSG_purpleWords__`,
+        redWords: `__MSG_redWords__`,
+        phrases: `__MSG_phrases__`,
+        noSavedItems: `__MSG_noSavedItems__`,
+        clickAStar: `__MSG_clickAStar__`,
+        loadingDotDotDot: `__MSG_loadingDotDotDot__`,
+        showMore: `__MSG_showMore__`,
+        openCloseBottomPanel: `__MSG_openCloseBottomPanel__`,
+        openCloseVerticalView: `__MSG_openCloseVerticalView__`,
+        close: `__MSG_close__`,
+        autoPaused: `__MSG_autoPaused__`,
+        pressSpaceToContinue: `__MSG_pressSpaceToContinue__`,
+        saveWordTooltip: `__MSG_saveWordTooltip__`,
+        subscriptionToProFeatures: `__MSG_subscriptionToProFeatures__`,
+        tryForFree: `__MSG_tryForFree__`,
+        noCreditCardRequired: `__MSG_noCreditCardRequired__`
+    }
+</script>
+
+<audio controls autoplay hidden id="llnPlayWord">
+    <source src="#" type="audio/mpeg">
+</audio>
+
+<!--indicator that lln is loaded-->
+<div id="lln-loaded" style="display: none;"></div>
+<!--focus trap-->
+<div id="lln-focus-trap" style="position: fixed; top: 5000px; width: 1px; height: 1px; background: transparent;" tabindex="100"></div>
+
+<div class="lln-modal" id="lln-modal-practice" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Practice
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body" style="width: 450px; ">
+            <div style="min-height: 150px">
+                <div id="lln-practice-question"></div>
+                <div id="lln-practice-answer"></div>
+            </div>
+            <div class="lln-modal-buttons">
+                <a href="#" class="lln-btn" id="lln-practice-show-answer-btn">Show answer</a>
+                <a href="#" class="lln-btn lln-practice-difficulty-btn" data-interval-multiplier="0.2">Hard</a>
+                <a href="#" class="lln-btn lln-practice-difficulty-btn" data-interval-multiplier="2">Okay</a>
+                <a href="#" class="lln-btn lln-practice-difficulty-btn" data-interval-multiplier="10">Easy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-welcome" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Language Learning with Netflix
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body" style="width: 620px;">
+            <div id="lln-modal-welcome-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-cancel-subscription" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Language Learning with Netflix
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body">
+            <div id="lln-modal-cancel-subscription-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-update-payment" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Language Learning with Netflix
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body">
+            <div id="lln-modal-update-payment-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-anki-export-modal" style="display: none;">
+    <div class="lln-modal-content">
+        <h4 class="lln-modal-title">
+            __MSG_exportToAnki__
+        </h4>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body">
+            <p>__MSG_pleaseSelectItemsToExport__</p>
+            <div id="lln-anki-select" class="styled-scrollbar"></div>
+            <div class="lln-modal-buttons">
+                <a href="#" class="lln-btn" id="lln-anki-export-modal-export-btn" download="anki_import.csv">__MSG_download__</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-login" style="display: none;">
+        <div class="lln-modal-content">
+            <div class="lln-modal-title">
+                Language Learning with Netflix
+            </div>
+            <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+            <div class="lln-modal-body">
+                <p>__MSG_alreadyUserPleaseSignIn__</p>
+                <div class="lln-modal-buttons ">
+                    <a href="#" class="lln-btn lln-login">__MSG_continueWithGoogle_btn_string__</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lln-modal" id="lln-modal-access-pro-feature-login" style="display: none;">
+        <div class="lln-modal-content">
+            <div class="lln-modal-title">
+                Language Learning with Netflix
+            </div>
+            <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+            <div class="lln-modal-body">
+                <p>__MSG_pleaseSignIn__</p>
+                <div class="lln-modal-buttons ">
+                    <a href="#" class="lln-btn" id="lln-btn-access-pro-feature-login">__MSG_continueWithGoogle_btn_string__</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="lln-modal" id="lln-modal-request-trial" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Language Learning with Netflix
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body">
+            <div id="lln-modal-request-trial-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-pre-payment" style="display: none;">
+        <div class="lln-modal-content">
+            <div class="lln-modal-title">
+                Language Learning with Netflix
+            </div>
+            <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+            <div class="lln-modal-body">
+                <div id="lln-modal-pre-payment-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lln-modal" id="lln-modal-payment-success" style="display: none;">
+        <div class="lln-modal-content">
+            <div class="lln-modal-title">
+                Language Learning with Netflix
+            </div>
+            <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+            <div class="lln-modal-body">
+                <div id="lln-modal-payment-success-body"></div>
+            </div>
+        </div>
+    </div>
+
+<div class="lln-modal" id="lln-modal-trial-begun" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lln-modal-title">
+            Language Learning with Netflix
+        </div>
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+        <div class="lln-modal-body">
+        </div>
+
+    </div>
+</div>
+
+<div class="lln-modal" id="lln-modal-loading" style="display: none;">
+    <div class="lln-modal-content">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+</div>
+
+<a class="lln-toggle-bottom-view" title="__MSG_openCloseBottomPanel__">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 640 640">
+        <path fill="#fff" d="M144.512 241.536c13.952-14.272 33.376-15.392 50.432 0l125.056 119.904 125.056-119.904c17.056-15.392 36.512-14.272 50.368 0 13.952 14.24 13.056 38.304 0 51.68-12.992 13.376-150.24 144.064-150.24 144.064-6.944 7.136-16.064 10.72-25.184 10.72s-18.24-3.584-25.248-10.72c0 0-137.184-130.688-150.24-144.064-13.088-13.376-13.952-37.44 0-51.68z"></path>
+    </svg>
+</a>
+
+<a class="lln-toggle-vertical-view" title="__MSG_openCloseVerticalView__">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 640 640">
+        <path fill="#fff" d="M144.512 241.536c13.952-14.272 33.376-15.392 50.432 0l125.056 119.904 125.056-119.904c17.056-15.392 36.512-14.272 50.368 0 13.952 14.24 13.056 38.304 0 51.68-12.992 13.376-150.24 144.064-150.24 144.064-6.944 7.136-16.064 10.72-25.184 10.72s-18.24-3.584-25.248-10.72c0 0-137.184-130.688-150.24-144.064-13.088-13.376-13.952-37.44 0-51.68z"></path>
+    </svg>
+    <span class="star" style="display: none;">★</span>
+</a>
+
+<div class="lln-modal" id="lingo-options" style="display: none;">
+    <div class="lln-modal-content lingo-options" >
+        <a href="#" class="lln-close-modal lln-close-modal-btn"></a>
+    <div class="lingo-options-left">
+        <div class="lingo-options-title">
+            <!-- <span class="title">LLWN Options</span> -->
+            <div style="
+                text-align: right;
+                padding-right: 15px;
+                padding-bottom: 6px;
+                font-size: 14px;
+                ">Language Learning with Netflix
+            </div>
+            <a class="catalogue">
+                __MSG_catalogue__
+                <span class="lingo-tooltip right">
+                        <span class="svg-span svg-info-tooltip"></span>
+                        <span class="tt">__MSG_catalogue_tooltip__</span>
+                </span>
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXPxHyyfrYUwuSciBRijhA3Fp9iLKTN3pXK1ZrSXYvujM6g/viewform?usp=sf_link" target=”_blank” >
+                __MSG_feedback__
+                <span class="lingo-tooltip right">
+                    <span class="svg-span svg-info-tooltip"></span>
+                    <span class="tt">__MSG_feedback_tooltip__</span>
+                </span>
+            </a>
+
+            <a href="http://www.languagelearningwithnetflix.com/instructions.html" target=”_blank” >
+                __MSG_help__
+                <span class="lingo-tooltip right">
+                    <span class="svg-span svg-info-tooltip"></span>
+                    <span class="tt">__MSG_help_tooltip__</span>
+                </span>
+            </a>
+
+            <!--<a class="close">-->
+            <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 640 640">-->
+            <!--<path fill="#fff" d="M398.464 144.512c14.272 13.952 15.392 33.376 0 50.432l-119.904 125.056 119.904 125.056c15.392 17.056 14.272 36.512 0 50.368-14.24 13.952-38.304 13.056-51.68 0-13.376-12.992-144.064-150.24-144.064-150.24-7.136-6.944-10.72-16.064-10.72-25.184s3.584-18.24 10.72-25.248c0 0 130.688-137.184 144.064-150.24 13.376-13.088 37.44-13.952 51.68 0z"></path>-->
+            <!--</svg>-->
+            <!--</a>-->
+        </div>
+        <div class="keyboard-shortcuts-content" style="text-align: center; padding: 10px 0;">
+            <span style="opacity: .6;">__MSG_keyboardShortcuts__</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="334.182" height="217.3" viewBox="0 0 88.419 57.494"><g transform="translate(0 -239.506)"><path fill="none" d="M.042 239.629h88.419v57.494H.042z"/><text style="line-height:1.25" x="6.61" y="270.96" font-weight="400" font-size="3.428" font-family="sans-serif" letter-spacing="0" word-spacing="0" fill="#fff" stroke-width=".086" text-anchor="end"><tspan x="20.61" y="275.2">__MSG_previous__</tspan><tspan x="6.61" y="275.245"></tspan></text><text style="line-height:1.25" x="38.571" y="290.765" font-weight="400" font-size="3.428" font-family="sans-serif" letter-spacing="0" word-spacing="0" fill="#fff" stroke-width=".086" text-anchor="middle"><tspan x="45.039" y="289.4">__MSG_repeat__</tspan></text><text style="line-height:1.25" x="68.445" y="270.952" font-weight="400" font-size="3.428" font-family="sans-serif" letter-spacing="0" word-spacing="0" fill="#fff" stroke-width=".086"><tspan x="68.445" y="275.2">__MSG_next__</tspan><tspan x="68.445" y="275.237"></tspan></text><text style="line-height:1.25" x="34.039" y="248.505" font-weight="400" font-size="3.428" font-family="sans-serif" letter-spacing="0" word-spacing="0" fill="#fff" stroke-width=".086" text-anchor="middle"><tspan x="45.039" y="248.505">__MSG_playPause__</tspan></text><circle cx="44.389" cy="268.388" r="17.378" opacity=".622" fill="#333"/><path fill="#333" d="M38.906 254.307h11.827v12.403H38.906zM25.315 268.114h11.827v12.403H25.315zM38.923 268.114H50.75v12.403H38.923zM52.53 268.114h11.827v12.403H52.53z"/><g opacity=".845" fill="gray"><path d="M39.283 253.866c-.599 0-1.081.483-1.081 1.082v11.114c0 .599.482 1.081 1.081 1.081H50.09c.6 0 1.081-.482 1.081-1.081v-11.114c0-.6-.482-1.082-1.081-1.082zm.7.522h9.654a.92.92 0 0 1 .921.92v9.47a.92.92 0 0 1-.921.922h-9.654a.92.92 0 0 1-.922-.921v-9.47a.92.92 0 0 1 .922-.921z"/><path d="M44.753 256.864l-1.452 2.42h1.135v4.047h.635v-4.047h1.135z"/></g><g opacity=".845" fill="gray"><path d="M52.864 267.758c-.599 0-1.081.482-1.081 1.081v11.114c0 .6.482 1.082 1.081 1.082h10.807c.6 0 1.081-.483 1.081-1.082V268.84c0-.599-.482-1.081-1.081-1.081zm.7.52h9.654a.92.92 0 0 1 .921.922v9.47a.92.92 0 0 1-.921.922h-9.654a.92.92 0 0 1-.922-.922v-9.47a.92.92 0 0 1 .922-.921z"/><path d="M61.568 273.989l-2.42-1.453v1.135h-4.047v.635h4.047v1.135z"/></g><g opacity=".845" fill="gray"><path d="M39.283 267.758c-.599 0-1.081.482-1.081 1.081v11.114c0 .6.482 1.082 1.081 1.082H50.09c.6 0 1.081-.483 1.081-1.082V268.84c0-.599-.482-1.081-1.081-1.081zm.7.52h9.654a.92.92 0 0 1 .921.922v9.47a.92.92 0 0 1-.921.922h-9.654a.92.92 0 0 1-.922-.922v-9.47a.92.92 0 0 1 .922-.921z"/><path d="M44.753 277.222l1.453-2.42h-1.135v-4.046h-.635v4.046h-1.135z"/></g><g opacity=".845" fill="gray"><path d="M25.672 267.758c-.6 0-1.082.482-1.082 1.081v11.114c0 .6.483 1.082 1.082 1.082h10.806c.6 0 1.082-.483 1.082-1.082V268.84c0-.599-.483-1.081-1.082-1.081zm.699.52h9.654a.92.92 0 0 1 .921.922v9.47a.92.92 0 0 1-.921.922h-9.654a.92.92 0 0 1-.922-.922v-9.47a.92.92 0 0 1 .922-.921z"/><path d="M27.908 273.989l2.42 1.452v-1.135h4.047v-.635h-4.047v-1.135z"/></g></g></svg>
+            <div style="line-height: 23px; font-size: 13px; padding: 0 8px; margin-top: -8px;">
+                <div style="margin-bottom: 17px; opacity: .6;">(__MSG_alsoUseASD__)</div>
+                <div>[Q] - __MSG_toggleAutoPause__</div>
+                <div>[R] - __MSG_saveCurrentSubtitle__</div>
+            </div>
+        </div>
+    </div>
+    <div class="lingo-options-right">
+
+
+        <div class="options-block">
+
+            <div class="options-pl options-gray">
+
+                <!--<p><a href="https://chrome.google.com/webstore/detail/lln-language-learning-wit/hoombieeljmmljlkjmnheibnpciblicm" style="color: rgb(151, 186, 255);">Support LLN, purchase a subscription, leave a review! :)</a></p>-->
+
+                <div>
+                    <label >
+                        <span class="label-text">__MSG_mode__</span>
+                        <span id="lln-license-status">__MSG_notSignedIn__</span>
+
+                        <span class="lln-red-button lln-btn-open-login-modal">__MSG_signIn__</span>
+                        <span style="display: none;" class="lln-cancel-button lln-btn-signOut">__MSG_signOut__</span>
+                        <span style="display: none;" class="lln-cancel-button" id="lln-btn-open-cancel-modal">__MSG_manageSubscription__</span>
+                    </label>
+                </div>
+
+                <hr>
+
+                <div>
+                    <label id="TOL">
+                        <span class="label-text">__MSG_originalLanguage_label__</span>
+                        <span class="right-val">
+                            <span id="TOL-value"></span>
+
+                            <span class="lingo-tooltip top-left">
+                                    <span class="svg-span svg-info-tooltip"></span>
+                                    <span class="tt" id="TOL-tt">__MSG_originalLanguage_tooltip__</span>
+                            </span>
+                        </span>
+
+                    </label>
+
+                </div>
+                <div>
+                    <label id="NAL">
+                        <span class="label-text">__MSG_audioLanguage_label__</span>
+                        <span class="right-val">
+                            <span id="NAL-value"></span>
+
+                            <span class="lingo-tooltip top-left">
+                                            <span class="svg-span svg-info-tooltip"></span>
+                                            <span class="tt" id="NAL-tt">__MSG_audioLanguage_tooltip__</span>
+                                        </span>
+
+                            <span style="display: none;" class="NAL-fix-button">__MSG_fix__</span>
+                        </span>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div id="mismatchWarning"></div>
+
+            <hr>
+
+            <div class="options-gray">
+                <label id="NSL">
+                    <span class="label-text">__MSG_subtitleLanguage_label__ </span>
+                    <span class="right-val">
+                        <span id="NSL-value"></span>
+
+                        <span class="lingo-tooltip top-left">
+                                    <span class="svg-span svg-info-tooltip"></span>
+                                        <span class="tt" id="NSL-tt">__MSG_subtitleLanguage_tooltip__</span>
+                                </span>
+
+                        <span style="display: none;" class="NSL-fix-button">__MSG_fix__</span>
+                    </span>
+                </label>
+            </div>
+
+            <div class="options-gray">
+
+                <label>
+                    <span class="label-text">__MSG_vocabHighlight_label__</span>
+                    
+                    <span class="right-val">__MSG_featureComingSoon__</span>
+                    
+
+    <!--
+                    <select id="vocabFreq">
+                        <option value="300">__MSG_levelWithNumber:1:300__</option>
+                        <option value="800">__MSG_levelWithNumber:2:800__</option>
+                        <option value="1500">__MSG_levelWithNumber:3:1500__</option>
+                        <option value="2500">__MSG_levelWithNumber:4:2500__</option>
+                        <option value="4000">__MSG_levelWithNumber:5:4000__</option>
+                        <option value="6200">__MSG_levelWithNumber:6:6200__</option>
+                        <option value="9500">__MSG_levelWithNumber:7:9500__</option>
+                        <option value="-1">__MSG_levelDisable:8__</option>
+                    </select>
+    -->
+                    <span class="lingo-tooltip top-left">
+                                <span class="svg-span svg-info-tooltip"></span>
+                                <span class="tt" id="vocabFreq-tt">__MSG_vocabHighlight_tooltip__</span>
+                            </span>
+
+                    <!--todo-->
+                    <span id="vocabFreqNotice"></span>
+
+                </label>
+
+            </div>
+
+            <label class="translit-option" style="display: none;">
+                <span class="label-text">__MSG_showTransliterations__</span>
+
+                <select id="transliterations">
+                    <option value="ORIG">__MSG_noTransliterations__</option>
+                    <option value="ORIG+ROMAJI">__MSG_romaji__</option>
+                    <option value="ORIG+HIRAGANA">__MSG_hiragana__</option>
+                </select>
+
+            </label>
+
+            <hr>
+
+            <label>
+                <span class="label-text">__MSG_translationLanguage_label__</span>
+                <select id="destLanguage">
+                    <option value="af">Afrikaans</option>
+                    <option value="ar">العربية (Arabic)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="bs">bosanski (Bosnian)</option>
+                    <option value="bg">български (Bulgarian)</option>
+                    <option value="ca">català (Catalan)</option>
+                    <option value="zh-CN">中文 普通话 (Chinese Simplified)</option>
+                    <option value="zh-TW">中文 国语 (Chinese Traditional)</option>
+                    <option value="hr">Hrvatski (Croatian)</option>
+                    <option value="cs">čeština (Czech)</option>
+                    <option value="da">dansk (Danish)</option>
+                    <option value="nl">Nederlands (Dutch)</option>
+                    <option value="en">English</option>
+                    <option value="et">eesti keel (Estonian)</option>
+                    <option value="tl">Filipino</option>
+                    <option value="fi">suomi (Finnish)</option>
+                    <option value="fr">français (French)</option>
+                    <option value="de">Deutsch (German)</option>
+                    <option value="el">ελληνικά (Greek)</option>
+                    <option value="ht">Kreyòl ayisyen (Haitian Creole)</option>
+                    <option value="iw">עברית (Hebrew)</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                    <option value="hmn">Hmong</option>
+                    <option value="hu">magyar (Hungarian)</option>
+                    <option value="is">Íslenska (Icelandic)</option>
+                    <option value="id">Bahasa (Indonesian)</option>
+                    <option value="it">italiano (Italian)</option>
+                    <option value="ja">日本語 (Japanese)</option>
+                    <option value="ko">한국어 (Korean)</option>
+                    <option value="lv">latviešu valoda (Latvian)</option>
+                    <option value="lt">lietuvių kalba (Lithuanian)</option>
+                    <option value="mg">Fiteny Malagasy (Malagasy)</option>
+                    <option value="ms">Bahasa melayu (Malay)</option>
+                    <option value="mt">Malti (Maltese)</option>
+                    <option value="no">Norsk (Norwegian)</option>
+                    <option value="fa">فارسى (Persian)</option>
+                    <option value="pl">polski (Polish)</option>
+                    <option value="pt">português (Portuguese)</option>
+                    <option value="ro">limba română (Romanian)</option>
+                    <option value="ru">Русский (Russian)</option>
+                    <option value="sr">српски (Serbian)</option>
+                    <option value="sk">slovenčina (Slovak)</option>
+                    <option value="sl">slovenščina (Slovenian)</option>
+                    <option value="es">español (Spanish)</option>
+                    <option value="sw">Kiswahili (Swahili)</option>
+                    <option value="sv">Svenska (Swedish)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                    <option value="th">ภาษาไทย (Thai)</option>
+                    <option value="tr">Türkçe (Turkish)</option>
+                    <option value="uk">Українська (Ukrainian)</option>
+                    <option value="ur">اردو (Urdu)</option>
+                    <option value="vi">tiếng việt (Vietnamese)</option>
+                    <option value="cy">Cymraeg (Welsh)</option>
+                </select>
+                <span class="lingo-tooltip top-left">
+                                <span class="svg-span svg-info-tooltip"></span>
+                                <span class="tt">__MSG_translationLanguage_tooltip__</span>
+                            </span>
+
+            </label>
+
+            <label id="showMT-label">
+                <span class="label-text">__MSG_showMachineTranslation_label__ </span>
+
+                <input type="checkbox" id="showMT" checked>
+
+                <span id="MTNotice"></span>
+
+                <span class="lingo-tooltip">
+                            <span class="svg-span svg-info-tooltip"></span>
+                            <span class="tt" id="showMT-tt">__MSG_showMachineTranslation_tooltip__</span>
+                        </span>
+
+                        <span class="pro-feature-button lln-label-btn">__MSG_proFeature__</span>
+
+            </label>
+
+            <label id="showHT-label">
+                <span class="label-text">__MSG_showHumanTranslation_label__</span>
+
+                <input type="checkbox" id="showHT" checked>
+
+                <span id="HTNotice"></span>
+
+                <span class="lingo-tooltip">
+                            <span class="svg-span svg-info-tooltip"></span>
+                            <span class="tt" id="showHT-tt">__MSG_showHumanTranslation_tooltip__</span>
+                        </span>
+
+            </label>
+
+            <hr>
+
+            <!--<label>-->
+            <!--<span class="label-text">Auto-pause: </span>-->
+
+            <!--<input type="checkbox" id="autoPause" checked>-->
+
+            <!--<span class="lingo-tooltip">-->
+            <!--<span class="svg-span svg-info-tooltip"></span>-->
+            <!--<span class="tt">Automatically pause playback at the end of every subtitle.</span>-->
+            <!--</span>-->
+
+            <!--</label>-->
+            <label>
+                <span class="label-text">__MSG_playbackSpeed__</span>
+
+                <select id="playbackRate" style="max-width: 120px;">
+                    <option value="0.5">0.5</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.7">0.7</option>
+                    <option value="0.8">0.8</option>
+                    <option value="0.9">0.9</option>
+                    <option value="1">__MSG_normal__</option>
+                    <option value="1.25">1.25</option>
+                    <option value="1.5">1.5</option>
+                </select>
+
+            </label>
+            <!--
+                                    <label>
+                                        <span class="label-text">Fast non-speech segments: </span>
+
+                                        <input type="checkbox" id="fastPlayback" checked>
+
+                                        <span class="lingo-tooltip">
+                                        <span class="svg-span svg-info-tooltip"></span>
+                                        <span class="tt">Increase the playback speed of the video when no-one is talking (2.0x), so these parts pass faster.</span>
+                                    </span>
+
+                                    </label>
+            -->
+
+            <!--
+                                    <label>
+                                        <span class="label-text">Dark mode: </span>
+
+                                        <input type="checkbox" id="darkMode" checked>
+
+                                        <span class="lingo-tooltip">
+                                            <span class="svg-span svg-info-tooltip"></span>
+                                            <span class="tt">Use dark colors for the UI.</span>
+                                        </span>
+
+                                    </label>
+            -->
+        </div>
+        <!--<label>-->
+        <!--<input type="checkbox" id="longSegs" >-->
+        <!--Segments +500ms-->
+        <!--</label>-->
+        <!--<label>-->
+        <!--<label>-->
+        <!--<input type="checkbox" id="debug-checkBox">-->
+        <!--Debug-->
+        <!--</label>-->
+        <!--<label>-->
+        <!--<input type="checkbox" id="listenWordOnClick" checked>-->
+        <!--Listen word on click-->
+        <!--</label>-->
+    </div>
+
+        <div class="lln-modal-buttons clearfix">
+            <a href="#" class="lln-btn" id="lln-options-save-btn" style="margin-right: 22px;" target="_blank">__MSG_close__</a>
+        </div>
+    </div>
+</div>
+
+<div id="lln-v-sub-hover-translation"></div>
+
+<div class="lingoplayer-dict-wrap">
+    <div class="lingoplayer-dict-tooltip">
+        <div class="dict-title"><div class="close-dict"></div></div>
+        <div class="def styled-scrollbar"></div>
+        <div class="lln-word-save-buttons">
+            <span class="lingo-tooltip top-left" style="vertical-align: text-bottom; margin-right: 6px; margin-left: -12px;">
+                <span class="svg-span svg-info-tooltip"></span>
+                <span class="tt">__MSG_saveWordTooltip__</span>
+            </span>
+            <a href="#" style="background: white;" class="lln-word-save-btn active" data-color="C0"></a>
+            <a href="#" style="background: #6eff55;" class="lln-word-save-btn" data-color="C1"></a>
+            <a href="#" style="background: #fffb7a;" class="lln-word-save-btn" data-color="C2"></a>
+            <a href="#" style="background: #ff978e;" class="lln-word-save-btn" data-color="C3"></a>
+            <a href="#" style="background: #67e6ff;" class="lln-word-save-btn" data-color="C4"></a>
+        </div>
+    </div>
+</div>
+
+<div class="lingoplayer-vertical-view">
+    <div class="lln-vertical-view-tabs">
+        <a href="#" class="lln-vv-tab-title active" data-tab="VV_SUBS">__MSG_subtitles__</a>
+        <a href="#" class="lln-vv-tab-title" data-tab="VV_SAVED_WORDS">__MSG_savedItems__</a>
+        <a href="#" id="llnCloseVV" title="__MSG_close__" class="lln-vv-btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 768 768">
+                <path fill="#fff" d="M384 128c-141.408 0-256 114.624-256 256s114.592 256 256 256 256-114.624 256-256-114.592-256-256-256zM502.624 457.376c12.512 12.512 12.512 32.736 0 45.248-6.24 6.24-14.432 9.376-22.624 9.376s-16.384-3.136-22.624-9.376l-73.376-73.376-73.376 73.376c-6.24 6.24-14.432 9.376-22.624 9.376s-16.384-3.136-22.624-9.376c-12.512-12.512-12.512-32.736 0-45.248l73.376-73.376-73.376-73.376c-12.512-12.512-12.512-32.736 0-45.248s32.736-12.512 45.248 0l73.376 73.376 73.376-73.376c12.512-12.512 32.736-12.512 45.248 0s12.512 32.736 0 45.248l-73.376 73.376 73.376 73.376z"></path>
+            </svg>
+        </a>
+        <a href="#" id="llnPrintBtn" title="Print" class="lln-vv-btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="padding-top: 3px;" fill="#fff" width="17" height="17" viewBox="0 0 512 512">
+                <path d="M128 32h256v64h-256v-64z"></path>
+                <path d="M480 128h-448c-17.6 0-32 14.4-32 32v160c0 17.6 14.397 32 32 32h96v128h256v-128h96c17.6 0 32-14.4 32-32v-160c0-17.6-14.4-32-32-32zM64 224c-17.673 0-32-14.327-32-32s14.327-32 32-32 32 14.327 32 32-14.326 32-32 32zM352 448h-192v-160h192v160z"></path>
+            </svg>
+        </a>
+        <a href="#" id="llnAnkiExportBtn" title="__MSG_exportToAnki__" class="lln-vv-btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="padding-top: 1px;" fill="#fff" width="19" height="19" viewBox="0 0 768 768">
+                <path d="M256 528v16c54.112-82.496 115.2-126.496 192-128 0 33.44 0 90.816 0 96 0 17.632 16.352 32 36.576 32 11.648 0 21.6-5.056 28.256-12.512 61.856-64.928 191.168-195.488 191.168-195.488s-129.312-130.624-191.2-196.384c-6.656-6.56-16.576-11.616-28.224-11.616-20.224 0-36.576 14.304-36.576 32 0 5.376 0 60.064 0 96-149.12 0-192 155.872-192 272z"></path>
+                <path d="M160 672h448c17.696 0 32-14.336 32-32v-193.472c-21.248 21.632-43.648 44.576-64 65.504v95.968h-384v-384h224v-64h-256c-17.696 0-32 14.336-32 32v448c0 17.664 14.304 32 32 32z"></path>
+            </svg>
+        </a>
+        <a href="#" class="lln-vv-toggle-search-btn" style="display: none;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
+                <path fill="#fff" d="M496.131 435.698l-121.276-103.147c-12.537-11.283-25.945-16.463-36.776-15.963 28.628-33.534 45.921-77.039 45.921-124.588 0-106.039-85.961-192-192-192s-192 85.961-192 192 85.961 192 192 192c47.549 0 91.054-17.293 124.588-45.922-0.5 10.831 4.68 24.239 15.963 36.776l103.147 121.276c17.661 19.623 46.511 21.277 64.11 3.678s15.946-46.449-3.677-64.11zM192 320c-70.692 0-128-57.308-128-128s57.308-128 128-128 128 57.308 128 128-57.307 128-128 128z"></path>
+            </svg>
+        </a>
+    </div>
+    <div class="lln-vertical-view-search" style="display: none;">
+        <div class="lln-text-input-wrap">
+            <div class="lln-clear-text-input">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 768 768">
+                    <path fill="#fff" d="M384 128c-141.408 0-256 114.624-256 256s114.592 256 256 256 256-114.624 256-256-114.592-256-256-256zM502.624 457.376c12.512 12.512 12.512 32.736 0 45.248-6.24 6.24-14.432 9.376-22.624 9.376s-16.384-3.136-22.624-9.376l-73.376-73.376-73.376 73.376c-6.24 6.24-14.432 9.376-22.624 9.376s-16.384-3.136-22.624-9.376c-12.512-12.512-12.512-32.736 0-45.248l73.376-73.376-73.376-73.376c-12.512-12.512-12.512-32.736 0-45.248s32.736-12.512 45.248 0l73.376 73.376 73.376-73.376c12.512-12.512 32.736-12.512 45.248 0s12.512 32.736 0 45.248l-73.376 73.376 73.376 73.376z"></path>
+                </svg>
+            </div>
+            <input type="text" id="lln-vertical-view-search" placeholder="__MSG_search__">
+        </div>
+    </div>
+    <div id="lln-vertical-view-subs" class="lln-vertical-view-content styled-scrollbar">
+        <!--<div class="lln-vertical-view-sub">-->
+            <!--<div class="lln-sub-play-btn">▶</div>-->
+            <!--<div class="lln-sub-text">-->
+                <!--Example sub-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div id="lln-vertical-view-saved-items" class="lln-vertical-view-content styled-scrollbar" style="display: none;">
+
+        <div class="options clearfix">
+            <select id="llnSavedItemsLanguage" class="lln-select">
+                <option value="ALL">__MSG_loadingDotDotDot__</option>
+            </select>
+            <select id="llnSavedItemsType" class="lln-select narrow">
+                <option value="ALL">__MSG_allTypes__</option>
+                <option value="PHRASE">__MSG_phrases__</option>
+                <option value="WORD|C1">__MSG_greenWords__</option>
+                <option value="WORD|C2">__MSG_yellowWords__</option>
+                <option value="WORD|C3">__MSG_redWords__</option>
+                <option value="WORD|C4">__MSG_blueWords__</option>
+            </select>
+            <a href="#" class="lln-practice-link" style="display: none;">Practice</a>
+        </div>
+        <div class="content">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="subsDebug" 
+    style="position: absolute; top: 20%; 
+    height: 240px; width: 100%; left: 0; overflow-x: scroll;
+    z-index: 50; background: white; font-size: large; display: none">
+    <div id="debugTrackOne" style="position: absolute; left: 0; top: 0;">    </div>
+    <div id="debugTrackTwo" style="position: absolute; left: 0; top: 50px;">    </div>
+    <!-- <div id="debugTrackThree" style="position: absolute; left: 0; top: 100px;">  </div> -->
+    <div id="debugTrackWords1" style="position: absolute; left: 0; top: 100px;">  </div>
+    <div id="debugTrackWords2" style="position: absolute; left: 0; top: 120px;">  </div>
+    <div id="debugTrackWords3" style="position: absolute; left: 0; top: 140px;">  </div>
+    <div id="debugTrackWords4" style="position: absolute; left: 0; top: 160px;">  </div>
+    <div id="debugTrackWords5" style="position: absolute; left: 0; top: 180px;">  </div>
+
+    <div id="debugTrackCreate" style="position: absolute; left: 0; top: 210px;">  </div>    
+</div>
+

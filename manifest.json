@@ -1,0 +1,33 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.min.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "main.css" ],
+      "js": [ "content.min.js" ],
+      "matches": [ "https://*.netflix.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://cdn.firebase.com https://*.firebaseio.com https://www.googleapis.com https://apis.google.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiczGksjvcUmUv4EsSHNmaJt4AiLifPbi7zCS5PKKnBj4FdDUHOaR2j4PBJynmobjYWOLMSt+iPyNO2w1Zvvc1kIL+aYa4jQAIbWz19TUK4z2wExsIEKXlWLka3G3AVPHD5nTlDA7dLr2wS3d2ptFaz+F1LMKj1f7QuQwpyRAuX49KdcbxFVnmuE9eRarW+cWGIzVLckhuxUUAlVSjy8L7iJ8olsjub/TqEhIcHcDlCHoKwAhp6EW/bI9RcWPORRxzTSydTAng5vYpy34+CsZg6PtUrTnOapB1e6ZEugYMbIPARQOp2DlOsKAKsui/oI7Bql4eK2CQ3K5twb5qf0WwwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "oauth2": {
+      "client_id": "177081285221-3bc0ik38pnp3c9c26ng6o7jf95gpu0ka.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ]
+   },
+   "permissions": [ "https://www.googleapis.com/", "cookies", "https://languagelearningwithnetflix.com/*", "identity", "identity.email", "https://translate.google.com/*", "https://www.netflix.com/*", "https://*.nflxvideo.net/*", "https://*.cloudfunctions.net/*", "webRequest", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.1",
+   "web_accessible_resources": [ "lln.min.js", "content.html", "data/*.json" ]
+}
